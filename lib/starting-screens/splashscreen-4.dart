@@ -1,16 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
-import 'package:groceryapp/splashscreen-2.dart';
 
-class SplashScreen1 extends StatefulWidget {
-  const SplashScreen1({super.key});
+class SplashScreen4 extends StatefulWidget {
+  const SplashScreen4({super.key});
 
   @override
-  State<SplashScreen1> createState() => _SplashScreen1State();
+  State<SplashScreen4> createState() => _SplashScreen4State();
 }
 
-class _SplashScreen1State extends State<SplashScreen1> {
+class _SplashScreen4State extends State<SplashScreen4> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,7 +15,7 @@ class _SplashScreen1State extends State<SplashScreen1> {
         body: Stack(children: [
           Positioned.fill(
             child: Image.asset(
-              'lib/assets/markus-spiske-i5tesTFPBjw-unsplash 1.png',
+              'lib/assets/image3.png',
               fit: BoxFit.cover, // Replace with your image path
             ),
           ),
@@ -47,16 +44,20 @@ class _SplashScreen1State extends State<SplashScreen1> {
                     ),
                   ),
                   Text(
-                    'Welcome to',
+                    'Get Discounts',
                     style: TextStyle(
-                      fontSize: 28,
-                      fontWeight: FontWeight.bold,
+                      fontSize: 25,
+                      fontWeight: FontWeight.w900,
                       color: Colors.black,
                     ),
                   ),
-                  Image(image: AssetImage('lib/assets/bigCart.png')),
+                  Text('On All Products ',style: TextStyle(
+                    fontSize: 25,
+                    fontWeight: FontWeight.w900,
+                    color: Colors.black,
+                  ),),
                   Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 24),
+                    padding: const EdgeInsets.only(bottom: 17.0),
                     child: Text(
                       'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy',
                       textAlign: TextAlign.center,
@@ -77,41 +78,38 @@ class _SplashScreen1State extends State<SplashScreen1> {
                       children: [
                         Icon(
                           Icons.circle,
+                          color: Colors.grey.shade100,
+                          size: 10,
+                        ),
+                        SizedBox(
+                          width: 2,
+                        ),
+                        Icon(
+                          Icons.circle,
+                          color: Colors.grey.shade100,
+                          size: 10,
+                        ),
+                        SizedBox(
+                          width: 2,
+                        ),
+                        Icon(
+                          Icons.circle,
+                          color: Colors.grey.shade100,
+                          size: 10,
+                        ),
+                        SizedBox(
+                          width: 2,
+                        ),
+                        Icon(
+                          Icons.circle,
                           color: Colors.green,
-                          size: 10,
-                        ),
-                        SizedBox(
-                          width: 2,
-                        ),
-                        Icon(
-                          Icons.circle,
-                          color: Colors.grey.shade100,
-                          size: 10,
-                        ),
-                        SizedBox(
-                          width: 2,
-                        ),
-                        Icon(
-                          Icons.circle,
-                          color: Colors.grey.shade100,
-                          size: 10,
-                        ),
-                        SizedBox(
-                          width: 2,
-                        ),
-                        Icon(
-                          Icons.circle,
-                          color: Colors.grey.shade100,
                           size: 10,
                         ),
                       ],
                     ),
                     SizedBox(height: 20),
                     ElevatedButton(
-                      onPressed: () {
-                        Get.to(()=>SplashScreen2());
-
-                      },
+                      onPressed: () {},
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.green,
                         padding: EdgeInsets.symmetric(

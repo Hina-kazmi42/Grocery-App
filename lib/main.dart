@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:groceryapp/splashcode.dart';
-import 'package:groceryapp/splashscreen-1.dart';
-import 'package:groceryapp/splashscreen-2.dart';
-import 'package:groceryapp/splashscreen-3.dart';
-import 'package:groceryapp/splashscreen-4.dart';
+import 'package:groceryapp/starting-screens/splashscreen-1.dart';
+import 'package:groceryapp/starting-screens/splashscreen-2.dart';
+import 'package:groceryapp/starting-screens/splashscreen-3.dart';
+import 'package:groceryapp/starting-screens/splashscreen-4.dart';
+import 'package:groceryapp/view/home-screen/auth-1.dart';
 
 void main() {
   runApp(const MyApp());
@@ -38,7 +39,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home: SplashScreen1(),
+      home: AuthScreen1(),
     );
   }
 }

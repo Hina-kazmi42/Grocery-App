@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:groceryapp/starting-screens/splashscreen-4.dart';
 
-class SplashScreen4 extends StatefulWidget {
-  const SplashScreen4({super.key});
+class SplashScreen3 extends StatefulWidget {
+  const SplashScreen3({super.key});
 
   @override
-  State<SplashScreen4> createState() => _SplashScreen4State();
+  State<SplashScreen3> createState() => _SplashScreen3State();
 }
 
-class _SplashScreen4State extends State<SplashScreen4> {
+class _SplashScreen3State extends State<SplashScreen3> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -15,7 +18,7 @@ class _SplashScreen4State extends State<SplashScreen4> {
         body: Stack(children: [
           Positioned.fill(
             child: Image.asset(
-              'lib/assets/image3.png',
+              'lib/assets/image4.png',
               fit: BoxFit.cover, // Replace with your image path
             ),
           ),
@@ -44,14 +47,14 @@ class _SplashScreen4State extends State<SplashScreen4> {
                     ),
                   ),
                   Text(
-                    'Get Discounts',
+                    'Buy Premium',
                     style: TextStyle(
                       fontSize: 35,
                       fontWeight: FontWeight.w900,
                       color: Colors.black,
                     ),
                   ),
-                  Text('On All Products ',style: TextStyle(
+                  Text('Quality Fruits', style: TextStyle(
                     fontSize: 35,
                     fontWeight: FontWeight.w900,
                     color: Colors.black,
@@ -94,7 +97,7 @@ class _SplashScreen4State extends State<SplashScreen4> {
                         ),
                         Icon(
                           Icons.circle,
-                          color: Colors.grey.shade100,
+                          color: Colors.green,
                           size: 10,
                         ),
                         SizedBox(
@@ -102,14 +105,16 @@ class _SplashScreen4State extends State<SplashScreen4> {
                         ),
                         Icon(
                           Icons.circle,
-                          color: Colors.green,
+                          color: Colors.grey.shade100,
                           size: 10,
                         ),
                       ],
                     ),
                     SizedBox(height: 20),
                     ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Get.to(()=>SplashScreen4());
+                      },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.green,
                         padding: EdgeInsets.symmetric(

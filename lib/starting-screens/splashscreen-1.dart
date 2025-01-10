@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
-import 'package:groceryapp/splashscreen-3.dart';
+import 'package:groceryapp/starting-screens/splashscreen-2.dart';
 
-class SplashScreen2 extends StatefulWidget {
-  const SplashScreen2({super.key});
+class SplashScreen1 extends StatefulWidget {
+  const SplashScreen1({super.key});
 
   @override
-  State<SplashScreen2> createState() => _SplashScreen2State();
+  State<SplashScreen1> createState() => _SplashScreen1State();
 }
 
-class _SplashScreen2State extends State<SplashScreen2> {
+class _SplashScreen1State extends State<SplashScreen1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,7 +18,7 @@ class _SplashScreen2State extends State<SplashScreen2> {
         body: Stack(children: [
           Positioned.fill(
             child: Image.asset(
-              'lib/assets/image2.png',
+              'lib/assets/markus-spiske-i5tesTFPBjw-unsplash 1.png',
               fit: BoxFit.cover, // Replace with your image path
             ),
           ),
@@ -47,18 +47,14 @@ class _SplashScreen2State extends State<SplashScreen2> {
                     ),
                   ),
                   Text(
-                    'Buy Quality',
+                    'Welcome to',
                     style: TextStyle(
-                      fontSize: 35,
-                      fontWeight: FontWeight.w900,
+                      fontSize: 28,
+                      fontWeight: FontWeight.bold,
                       color: Colors.black,
                     ),
                   ),
-                  Text('Dairy Products', style: TextStyle(
-                    fontSize: 35,
-                    fontWeight: FontWeight.w900,
-                    color: Colors.black,
-                  ),),
+                  Image(image: AssetImage('lib/assets/bigCart.png')),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 24),
                     child: Text(
@@ -81,7 +77,7 @@ class _SplashScreen2State extends State<SplashScreen2> {
                       children: [
                         Icon(
                           Icons.circle,
-                          color: Colors.grey.shade100,
+                          color: Colors.green,
                           size: 10,
                         ),
                         SizedBox(
@@ -89,7 +85,7 @@ class _SplashScreen2State extends State<SplashScreen2> {
                         ),
                         Icon(
                           Icons.circle,
-                          color: Colors.green,
+                          color: Colors.grey.shade100,
                           size: 10,
                         ),
                         SizedBox(
@@ -113,7 +109,8 @@ class _SplashScreen2State extends State<SplashScreen2> {
                     SizedBox(height: 20),
                     ElevatedButton(
                       onPressed: () {
-                        Get.to(()=>SplashScreen3());
+                        Get.to(()=>SplashScreen2());
+
                       },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.green,
